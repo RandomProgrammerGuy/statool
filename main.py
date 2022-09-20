@@ -60,11 +60,11 @@ elif mode == "d" or mode == "D":
             six += 1
         i += 1
     print("1 appeared " + str(one) + " times, 2 appeared " + str(two) + " times, 3 appeared " + str(three) + " times, 4 appeared " + str(four) + " times, 5 appeared " + str(five) + " times and 6 appeared " + str(six) + " times")
-    print("the percentage of 1s in the result was " + str(one/int(throw_numb)))
-    print("the percentage of 2s in the result was " + str(two/int(throw_numb)))
-    print("the percentage of 3s in the result was " + str(three/int(throw_numb)))
-    print("the percentage of 4s in the result was " + str(four/int(throw_numb)))
-    print("the percentage of 5s in the result was " + str(five/int(throw_numb)))
-    print("the percentage of 6s in the result was " + str(six/int(throw_numb)))
+    print("the percentage of 1s in the result was " + str(one/int(throw_numb) * 100))
+    print("the percentage of 2s in the result was " + str(two/int(throw_numb) * 100))
+    print("the percentage of 3s in the result was " + str(three/int(throw_numb) * 100))
+    print("the percentage of 4s in the result was " + str(four/int(throw_numb) * 100))
+    print("the percentage of 5s in the result was " + str(five/int(throw_numb) * 100))
+    print("the percentage of 6s in the result was " + str(six/int(throw_numb) * 100))
 else: 
     print("Undefined mode selected. Program Terminated")
