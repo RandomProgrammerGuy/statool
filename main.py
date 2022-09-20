@@ -9,7 +9,7 @@ def coin_throw():
     return outcomes[rand_i]
 
 def dice_throw():
-   return (random.randint(0, 9))
+   return (random.randint(0, 6))
 
 # -- S E L E C T   M O D E -- #
 print("Select Mode:")                                                                                  # Print instructions on how to select mode
@@ -44,7 +44,7 @@ elif mode == "d" or mode == "D":
     print("Enter number of times you want to throw the dice")
     throw_numb = input()             
     while i < int(throw_numb):
-        res = dice_throw(throw_numb)
+        res = dice_throw()
         print(res)
         if res == 1:
             one += 1
