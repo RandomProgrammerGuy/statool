@@ -9,7 +9,7 @@ def coin_throw():
     return outcomes[rand_i]
 
 def dice_throw():
-   return (random.randint(0, 6))
+   return (random.randint(1, 6))
 
 # -- S E L E C T   M O D E -- #
 print("Select Mode:")                                                                                  # Print instructions on how to select mode
