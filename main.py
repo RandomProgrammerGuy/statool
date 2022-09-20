@@ -1,4 +1,5 @@
 # Import "random" library #
+from cgi import print_form
 import random
 
 # -- COIN THROW FUNCTION -- #
@@ -43,7 +44,27 @@ elif mode == "d" or mode == "D":
     print("Enter number of times you want to throw the dice")
     throw_numb = input()             
     while i < int(throw_numb):
-        print(dice_throw(throw_numb))
+        res = dice_throw(throw_numb)
+        print(res)
+        if res == 1:
+            one += 1
+        elif res == 2:
+            two += 1
+        elif res == 3:
+            three += 1
+        elif res == 4:
+            four += 1
+        elif res == 5:
+            five += 1
+        else:
+            six += 1
         i += 1
+    print("1 appeared " + str(one) + " times, 2 appeared " + str(two) + " times, 3 appeared " + str(three) + " times, 4 appeared " + str(four) + " times, 5 appeared " + str(five) + " times and 6 appeared " + str(six) + " times")
+    print("the percentage of 1s in the result was " + str(one/int(throw_numb)))
+    print("the percentage of 2s in the result was " + str(two/int(throw_numb)))
+    print("the percentage of 3s in the result was " + str(three/int(throw_numb)))
+    print("the percentage of 4s in the result was " + str(four/int(throw_numb)))
+    print("the percentage of 5s in the result was " + str(five/int(throw_numb)))
+    print("the percentage of 6s in the result was " + str(six/int(throw_numb)))
 else: 
     print("Undefined mode selected. Program Terminated")
