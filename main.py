@@ -38,7 +38,7 @@ if mode == "c" or mode == "C":                                                  
             tails += 1
         i += 1
     print("You got Heads " + str(heads) + " times and Tails " + str(tails) + " times")
-    print("heads appeared " + str((heads/throw_numb) * 100) + "\% of times and Tails " + str((tails/throw_numb) * 100) + "\%")
+    print("heads appeared " + str((heads/int(throw_numb)) * 100) + "\% of times and Tails " + str((tails/int(throw_numb)) * 100) + "\%")
 elif mode == "d" or mode == "D":
     print("Enter number of times you want to throw the dice")
     throw_numb = input()             
